@@ -15,6 +15,7 @@ import 'hammerjs';
 
 import { PromotionService } from "./services/promotion.service";
 import { DishService } from "./services/dish.service";
+import { LeaderService } from "./services/leader.service";
 
 import { AppRoutingModule } from "./app-routing/app-routing.module";
 import { MenuComponent } from './menu/menu.component';
@@ -49,7 +50,9 @@ import { ContactComponent } from './contact/contact.component';
     
   ],
   providers: [DishService,
-  PromotionService],
+  PromotionService,
+  LeaderService
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
